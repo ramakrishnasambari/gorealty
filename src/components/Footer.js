@@ -53,12 +53,8 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>
-            Copyright © 2025 GoRealty | All Rights Reserved | 
-            RERA No: P02400009910 | 
-            <a href="#disclaimer" style={{ color: '#bdc3c7', marginLeft: '0.5rem' }}>
-              Disclaimer
-            </a>
+          <p className="copyright-text">
+            Copyright © 2025 GoRealty | All Rights Reserved
           </p>
         </div>
       </div>

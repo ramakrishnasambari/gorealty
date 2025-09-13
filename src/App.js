@@ -6,6 +6,7 @@ import FloorPlans from './components/FloorPlans';
 import Amenities from './components/Amenities';
 import Gallery from './components/Gallery';
 import Location from './components/Location';
+import About from './components/About';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -18,8 +19,9 @@ function App() {
       <FloorPlans />
       <Amenities />
       <Gallery />
-      <Location />
-      <Footer />
+        <Location />
+        <About />
+        <Footer />
     </div>
   );
 }
