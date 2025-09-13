@@ -9,6 +9,7 @@ import Location from './components/Location';
 import About from './components/About';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
+import WhatsAppButton from './components/WhatsAppButton';
 import './App.css';
 
 function App() {
@@ -35,13 +36,14 @@ function App() {
       <Location onOpenModal={openModal} />
       <About onOpenModal={openModal} />
       <Footer onOpenModal={openModal} />
-      <ContactModal 
-        isOpen={isModalOpen} 
-        onClose={closeModal} 
-        title={modalTitle}
-      />
-    </div>
-  );
-}
+        <ContactModal
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          title={modalTitle}
+        />
+        <WhatsAppButton />
+      </div>
+    );
+  }
 
-export default App;
+  export default App;

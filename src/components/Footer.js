@@ -13,8 +13,12 @@ const Footer = ({ onOpenModal }) => {
               prime locations across Hyderabad.
             </p>
             <div style={{ display: 'flex', gap: '1rem' }}>
-              <button className="btn" style={{ padding: '8px 16px' }}>
-                Get Instant Call Back
+              <button 
+                className="footer-cta-btn"
+                onClick={() => onOpenModal("Get Instant Call Back - GoRealty Property Hub LLP")}
+              >
+                <span className="btn-icon">📞</span>
+                <span className="btn-text">Get Instant Call Back</span>
               </button>
             </div>
           </div>
@@ -38,7 +42,7 @@ const Footer = ({ onOpenModal }) => {
               <li>📧 info@gorealtyprophub.com</li>
               <li>📍 Rajendranagar, Hyderabad</li>
               <li>🏢 Telangana 500077</li>
-              <li><a href="https://wa.link/cdpdmx" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', textDecoration: 'none' }}>📱 WhatsApp</a></li>
+              <li><a href="https://wa.link/cdpdmx" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', textDecoration: 'none' }}>💬 WhatsApp</a></li>
             </ul>
           </div>
           
@@ -55,7 +59,15 @@ const Footer = ({ onOpenModal }) => {
         
         <div className="footer-bottom">
           <p className="copyright-text">
-            Copyright © 2025 GoRealty | All Rights Reserved
+            Copyright © 2025 GoRealty  |  Designed and Developed by 
+            <a 
+              href="https://www.eshikatp.online/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="eshika-link"
+            >
+              Eshika
+            </a>
           </p>
         </div>
       </div>
