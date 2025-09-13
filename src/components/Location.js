@@ -62,8 +62,7 @@ const Location = ({ onOpenModal }) => {
       <div className="container">
         <div className={`location-header ${isVisible ? 'animate-in' : ''}`}>
           <h2 className="location-title">
-            <span className="title-main">Prime</span>
-            <span className="title-sub">Location</span>
+            <span className="title-main">Prime Location</span>
           </h2>
           <p className="location-subtitle">
             Strategically located in the heart of Hyderabad's IT corridor with excellent connectivity

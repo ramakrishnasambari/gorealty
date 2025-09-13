@@ -43,7 +43,6 @@ const Hero = ({ onOpenModal }) => {
             <div className="title-container">
               <h1 className="main-title-nextgen">
                 <span className="title-line-1">GoRealty</span>
-                <span className="title-line-2">Property Hub LLP</span>
               </h1>
               <div className="title-underline"></div>
             </div>

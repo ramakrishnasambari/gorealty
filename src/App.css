@@ -1043,6 +1043,61 @@
   opacity: 1;
 }
 
+/* Pricing CTA Buttons - Smaller for single row */
+.pricing-cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.pricing-cta-buttons .btn-cta-primary,
+.pricing-cta-buttons .btn-cta-secondary,
+.pricing-cta-buttons .btn-cta-tertiary {
+  padding: 12px 25px;
+  font-size: 0.9rem;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+.pricing-cta-buttons .btn-text {
+  font-size: 0.85rem;
+}
+
+.pricing-cta-buttons .btn-icon {
+  font-size: 0.9rem;
+}
+
+/* Responsive styles for pricing CTA buttons */
+@media (max-width: 768px) {
+  .pricing-cta-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .pricing-cta-buttons .btn-cta-primary,
+  .pricing-cta-buttons .btn-cta-secondary,
+  .pricing-cta-buttons .btn-cta-tertiary {
+    width: 100%;
+    max-width: 300px;
+    padding: 14px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-cta-buttons .btn-cta-primary,
+  .pricing-cta-buttons .btn-cta-secondary,
+  .pricing-cta-buttons .btn-cta-tertiary {
+    padding: 12px 20px;
+    font-size: 0.85rem;
+  }
+  
+  .pricing-cta-buttons .btn-text {
+    font-size: 0.8rem;
+  }
+}
+
 .cta-content {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);

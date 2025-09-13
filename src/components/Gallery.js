@@ -137,8 +137,7 @@ const Gallery = ({ onOpenModal }) => {
       <div className="container">
         <div className={`gallery-header ${isVisible ? 'animate-in' : ''}`}>
           <h2 className="gallery-title">
-            <span className="title-main">Photo</span>
-            <span className="title-sub">Gallery</span>
+            <span className="title-main">Photo Gallery</span>
           </h2>
           <p className="gallery-subtitle">
             Explore our premium residential complex through stunning visuals

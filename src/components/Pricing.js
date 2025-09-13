@@ -69,8 +69,7 @@ const Pricing = ({ onOpenModal }) => {
       <div className="container">
         <div className={`pricing-header ${isVisible ? 'animate-in' : ''}`}>
           <h2 className="pricing-title">
-            <span className="title-main">Pricing &</span>
-            <span className="title-sub">Saleable Area</span>
+            <span className="title-main">Pricing & Saleable Area</span>
           </h2>
           <p className="pricing-subtitle">
             Choose your perfect home from our premium collection
@@ -125,35 +124,6 @@ const Pricing = ({ onOpenModal }) => {
           ))}
         </div>
 
-        <div className={`pricing-cta ${isVisible ? 'animate-in' : ''}`}>
-          <div className="cta-content">
-            <h3 className="cta-title">Ready to Make Your Dream Home a Reality?</h3>
-            <p className="cta-subtitle">Contact our experts for personalized assistance</p>
-            <div className="cta-buttons">
-              <button 
-                className="btn-cta-primary"
-                onClick={() => onOpenModal("Enquire Now - GoRealty Property Hub LLP")}
-              >
-                <span className="btn-text">Enquire Now</span>
-                <span className="btn-icon">📞</span>
-              </button>
-              <button 
-                className="btn-cta-secondary"
-                onClick={() => onOpenModal("Download Brochure - GoRealty Property Hub LLP")}
-              >
-                <span className="btn-text">Download Brochure</span>
-                <span className="btn-icon">📄</span>
-              </button>
-              <button 
-                className="btn-cta-tertiary"
-                onClick={() => onOpenModal("Schedule Visit - GoRealty Property Hub LLP")}
-              >
-                <span className="btn-text">Schedule Visit</span>
-                <span className="btn-icon">🏠</span>
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -7,6 +7,10 @@ const Header = ({ onOpenModal }) => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -17,17 +21,18 @@ const Header = ({ onOpenModal }) => {
           </a>
           
           <nav className={`nav ${isMobileMenuOpen ? 'nav-open' : ''}`}>
-            <a href="#home">Home</a>
-            <a href="#pricing">Price</a>
-            <a href="#floor-plans">Site & Floor Plan</a>
-            <a href="#amenities">Amenities</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#location">Location</a>
+            <a href="#home" onClick={closeMobileMenu}>Home</a>
+            <a href="#pricing" onClick={closeMobileMenu}>Price</a>
+            <a href="#floor-plans" onClick={closeMobileMenu}>Site & Floor Plan</a>
+            <a href="#amenities" onClick={closeMobileMenu}>Amenities</a>
+            <a href="#gallery" onClick={closeMobileMenu}>Gallery</a>
+            <a href="#location" onClick={closeMobileMenu}>Location</a>
             <a 
               href="#virtual-tour" 
               onClick={(e) => {
                 e.preventDefault();
                 onOpenModal("Virtual Site Visit - GoRealty Property Hub LLP");
+                closeMobileMenu();
               }}
             >
               Virtual Site Visit
@@ -37,6 +42,7 @@ const Header = ({ onOpenModal }) => {
               onClick={(e) => {
                 e.preventDefault();
                 onOpenModal("Download Brochure - GoRealty Property Hub LLP");
+                closeMobileMenu();
               }}
             >
               Download Brochure

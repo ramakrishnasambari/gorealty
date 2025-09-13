@@ -113,8 +113,7 @@ const Amenities = ({ onOpenModal }) => {
       <div className="container">
         <div className={`amenities-header ${isVisible ? 'animate-in' : ''}`}>
           <h2 className="amenities-title">
-            <span className="title-main">Premium</span>
-            <span className="title-sub">Amenities</span>
+            <span className="title-main">Premium Amenities</span>
           </h2>
           <p className="amenities-subtitle">
             Experience luxury living with our world-class amenities and facilities

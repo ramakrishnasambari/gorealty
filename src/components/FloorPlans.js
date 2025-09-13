@@ -76,8 +76,7 @@ const FloorPlans = ({ onOpenModal }) => {
       <div className="container">
         <div className={`floor-plans-header ${isVisible ? 'animate-in' : ''}`}>
           <h2 className="floor-plans-title">
-            <span className="title-main">Site &</span>
-            <span className="title-sub">Floor Plans</span>
+            <span className="title-main">Site & Floor Plans</span>
           </h2>
           <p className="floor-plans-subtitle">
             Explore our meticulously designed floor plans and master site layout
