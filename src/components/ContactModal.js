@@ -60,7 +60,7 @@ Thank you.`;
         
         <div className="modal-header">
           <div className="modal-logo-container">
-            <img src="/logo.jpeg" alt="GoRealty Logo" className="modal-logo-img" />
+            <img src="logo.jpeg" alt="GoRealty Logo" className="modal-logo-img" />
             <h2 className="modal-title">GoRealty</h2>
           </div>
         </div>

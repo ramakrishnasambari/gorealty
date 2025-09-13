@@ -10,7 +10,7 @@ const FloorPlans = ({ onOpenModal }) => {
       id: '3bhk-p',
       type: '3 BHK + P',
       area: '1643 - 1757 SqFt',
-      image: '/3bhk_p.png',
+      image: '3bhk_p.png',
       features: ['3 Bedrooms', '3 Bathrooms', 'Living Room', 'Kitchen', 'Balcony', 'Parking'],
       color: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
@@ -18,7 +18,7 @@ const FloorPlans = ({ onOpenModal }) => {
       id: '3bhk-l',
       type: '3 BHK + L',
       area: '1873 - 2365 SqFt',
-      image: '/3bhk_L.png',
+      image: '3bhk_L.png',
       features: ['3 Bedrooms', '3 Bathrooms', 'Living Room', 'Kitchen', 'Study Room', 'Balcony', 'Parking'],
       color: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
       popular: true
@@ -27,7 +27,7 @@ const FloorPlans = ({ onOpenModal }) => {
       id: '3.5bhk',
       type: '3.5 BHK',
       area: '2674 SqFt',
-      image: '/3.5bhk.png',
+      image: '3.5bhk.png',
       features: ['3 Bedrooms', '3.5 Bathrooms', 'Living Room', 'Kitchen', 'Study Room', 'Balcony', 'Parking'],
       color: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
     },
@@ -35,7 +35,7 @@ const FloorPlans = ({ onOpenModal }) => {
       id: '4bhk-p',
       type: '4 BHK + P',
       area: '2883 - 2904 SqFt',
-      image: '/4bhk_p.png',
+      image: '4bhk_p.png',
       features: ['4 Bedrooms', '4 Bathrooms', 'Living Room', 'Kitchen', 'Study Room', 'Guest Room', 'Balcony', 'Parking'],
       color: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
     },
@@ -43,7 +43,7 @@ const FloorPlans = ({ onOpenModal }) => {
       id: '4bhk-l',
       type: '4 BHK + L',
       area: '3445 - 3572 SqFt',
-      image: '/4bhk_L.png',
+      image: '4bhk_L.png',
       features: ['4 Bedrooms', '4 Bathrooms', 'Living Room', 'Kitchen', 'Study Room', 'Guest Room', 'Terrace', 'Balcony', 'Parking'],
       color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
     }
@@ -93,7 +93,7 @@ const FloorPlans = ({ onOpenModal }) => {
             </div>
             <div className="master-plan-image-container">
               <img 
-                src="/GMasterPlan.jpg" 
+                src="GMasterPlan.jpg" 
                 alt="Master Site Plan" 
                 className="master-plan-image"
               />
@@ -169,7 +169,7 @@ const FloorPlans = ({ onOpenModal }) => {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-modal-btn" onClick={closeModal}>×</button>
             <img 
-              src={selectedPlan === -1 ? '/GMasterPlan.jpg' : floorPlans[selectedPlan].image}
+              src={selectedPlan === -1 ? 'GMasterPlan.jpg' : floorPlans[selectedPlan].image}
               alt={selectedPlan === -1 ? 'Master Site Plan' : `${floorPlans[selectedPlan].type} Floor Plan`}
               className="modal-image"
             />

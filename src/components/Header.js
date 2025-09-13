@@ -12,7 +12,7 @@ const Header = ({ onOpenModal }) => {
       <div className="container">
         <div className="header-content">
           <a href="#home" className="logo">
-            <img src="/logo.jpeg" alt="GoRealty Logo" className="logo-image" />
+            <img src="logo.jpeg" alt="GoRealty Logo" className="logo-image" />
             GoRealty
           </a>
           
