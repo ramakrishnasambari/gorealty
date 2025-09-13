@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gorealty/static/css/main.67e97042.css",
+    "main.js": "/gorealty/static/js/main.7367e6bd.js",
+    "index.html": "/gorealty/index.html",
+    "main.67e97042.css.map": "/gorealty/static/css/main.67e97042.css.map",
+    "main.7367e6bd.js.map": "/gorealty/static/js/main.7367e6bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67e97042.css",
+    "static/js/main.7367e6bd.js"
+  ]
+}
