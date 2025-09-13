@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Hero = () => {
+const Hero = ({ onOpenModal }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentFeature, setCurrentFeature] = useState(0);
 
@@ -127,15 +127,24 @@ const Hero = () => {
           
           {/* Modern CTA Buttons */}
           <div className="cta-section-nextgen">
-            <button className="btn-primary-nextgen">
+            <button 
+              className="btn-primary-nextgen"
+              onClick={() => onOpenModal("Download Brochure - GoRealty Property Hub LLP")}
+            >
               <span className="btn-text">Download Brochure</span>
               <span className="btn-icon">📄</span>
             </button>
-            <button className="btn-secondary-nextgen">
+            <button 
+              className="btn-secondary-nextgen"
+              onClick={() => onOpenModal("Virtual Tour - GoRealty Property Hub LLP")}
+            >
               <span className="btn-text">Virtual Tour</span>
               <span className="btn-icon">🎥</span>
             </button>
-            <button className="btn-tertiary-nextgen">
+            <button 
+              className="btn-tertiary-nextgen"
+              onClick={() => onOpenModal("Get Quote - GoRealty Property Hub LLP")}
+            >
               <span className="btn-text">Get Quote</span>
               <span className="btn-icon">💬</span>
             </button>

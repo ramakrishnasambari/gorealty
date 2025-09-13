@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Location = () => {
+const Location = ({ onOpenModal }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const nearbyPlaces = [
@@ -152,11 +152,17 @@ const Location = () => {
             <h3 className="cta-title">Ready to Visit Our Location?</h3>
             <p className="cta-subtitle">Schedule a site visit and explore the neighborhood</p>
             <div className="cta-buttons">
-              <button className="btn-cta-primary">
+              <button 
+                className="btn-cta-primary"
+                onClick={() => onOpenModal("Schedule Visit - GoRealty Property Hub LLP")}
+              >
                 <span className="btn-text">Schedule Visit</span>
                 <span className="btn-icon">📅</span>
               </button>
-              <button className="btn-cta-secondary">
+              <button 
+                className="btn-cta-secondary"
+                onClick={() => onOpenModal("Get Directions - GoRealty Property Hub LLP")}
+              >
                 <span className="btn-text">Get Directions</span>
                 <span className="btn-icon">🗺️</span>
               </button>

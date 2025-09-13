@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Amenities = () => {
+const Amenities = ({ onOpenModal }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const amenities = [

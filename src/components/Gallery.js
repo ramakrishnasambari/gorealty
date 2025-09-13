@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Gallery = () => {
+const Gallery = ({ onOpenModal }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -181,11 +181,17 @@ const Gallery = () => {
             <h3 className="cta-title">Want to See More?</h3>
             <p className="cta-subtitle">Download our complete gallery or take a virtual tour</p>
             <div className="cta-buttons">
-              <button className="btn-cta-primary">
+              <button 
+                className="btn-cta-primary"
+                onClick={() => onOpenModal("Download Gallery - GoRealty Property Hub LLP")}
+              >
                 <span className="btn-text">Download Gallery</span>
                 <span className="btn-icon">📥</span>
               </button>
-              <button className="btn-cta-secondary">
+              <button 
+                className="btn-cta-secondary"
+                onClick={() => onOpenModal("Virtual Tour - GoRealty Property Hub LLP")}
+              >
                 <span className="btn-text">Virtual Tour</span>
                 <span className="btn-icon">🎥</span>
               </button>

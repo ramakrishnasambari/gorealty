@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Pricing = () => {
+const Pricing = ({ onOpenModal }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
 
@@ -111,8 +111,11 @@ const Pricing = () => {
 
 
               <div className="card-actions">
-                <button className="btn-primary-card">
-                  <span className="btn-text">Get Price Breakup</span>
+                <button 
+                  className="btn-primary-card"
+                  onClick={() => onOpenModal("Enquire Now - GoRealty Property Hub LLP")}
+                >
+                  <span className="btn-text">Enquire Now</span>
                   <span className="btn-icon">→</span>
                 </button>
                 <button className="btn-secondary-card">
@@ -130,15 +133,24 @@ const Pricing = () => {
             <h3 className="cta-title">Ready to Make Your Dream Home a Reality?</h3>
             <p className="cta-subtitle">Contact our experts for personalized assistance</p>
             <div className="cta-buttons">
-              <button className="btn-cta-primary">
+              <button 
+                className="btn-cta-primary"
+                onClick={() => onOpenModal("Enquire Now - GoRealty Property Hub LLP")}
+              >
                 <span className="btn-text">Enquire Now</span>
                 <span className="btn-icon">📞</span>
               </button>
-              <button className="btn-cta-secondary">
+              <button 
+                className="btn-cta-secondary"
+                onClick={() => onOpenModal("Download Brochure - GoRealty Property Hub LLP")}
+              >
                 <span className="btn-text">Download Brochure</span>
                 <span className="btn-icon">📄</span>
               </button>
-              <button className="btn-cta-tertiary">
+              <button 
+                className="btn-cta-tertiary"
+                onClick={() => onOpenModal("Schedule Visit - GoRealty Property Hub LLP")}
+              >
                 <span className="btn-text">Schedule Visit</span>
                 <span className="btn-icon">🏠</span>
               </button>

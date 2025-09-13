@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = ({ onOpenModal }) => {
   return (
     <footer className="footer">
       <div className="container">
@@ -34,10 +34,11 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Contact Info</h3>
             <ul>
-              <li>📞 +91 2246181985</li>
-              <li>📧 info@gorealty.com</li>
+              <li>📞 +91 9989860099</li>
+              <li>📧 info@gorealtyprophub.com</li>
               <li>📍 Rajendranagar, Hyderabad</li>
               <li>🏢 Telangana 500077</li>
+              <li><a href="https://wa.link/cdpdmx" target="_blank" rel="noopener noreferrer" style={{ color: '#25D366', textDecoration: 'none' }}>📱 WhatsApp</a></li>
             </ul>
           </div>
           

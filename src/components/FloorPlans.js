@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const FloorPlans = () => {
+const FloorPlans = ({ onOpenModal }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);

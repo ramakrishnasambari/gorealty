@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Header = () => {
+const Header = ({ onOpenModal }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -23,8 +23,24 @@ const Header = () => {
             <a href="#amenities">Amenities</a>
             <a href="#gallery">Gallery</a>
             <a href="#location">Location</a>
-            <a href="#virtual-tour">Virtual Site Visit</a>
-            <a href="#download">Download Brochure</a>
+            <a 
+              href="#virtual-tour" 
+              onClick={(e) => {
+                e.preventDefault();
+                onOpenModal("Virtual Site Visit - GoRealty Property Hub LLP");
+              }}
+            >
+              Virtual Site Visit
+            </a>
+            <a 
+              href="#download" 
+              onClick={(e) => {
+                e.preventDefault();
+                onOpenModal("Download Brochure - GoRealty Property Hub LLP");
+              }}
+            >
+              Download Brochure
+            </a>
           </nav>
           
           <button 
