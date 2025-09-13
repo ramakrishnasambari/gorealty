@@ -118,9 +118,6 @@ const Pricing = ({ onOpenModal }) => {
                   <span className="btn-text">Enquire Now</span>
                   <span className="btn-icon">→</span>
                 </button>
-                <button className="btn-secondary-card">
-                  <span className="btn-text">View Details</span>
-                </button>
               </div>
 
               <div className="card-hover-effect" style={{ background: item.color }}></div>

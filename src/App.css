@@ -703,8 +703,8 @@
 
 /* Next-Gen Pricing Styles */
 .pricing-nextgen {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: white;
+  color: #2c3e50;
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -805,7 +805,7 @@
 
 .pricing-subtitle {
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #5a6c7d;
   margin: 0;
   font-weight: 300;
 }
@@ -964,8 +964,7 @@
 
 .card-actions {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  justify-content: center;
   position: relative;
   z-index: 2;
 }
