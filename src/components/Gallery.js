@@ -45,7 +45,7 @@ const Gallery = ({ onOpenModal }) => {
       id: 6,
       title: 'Garden Area',
       category: 'Amenities',
-      image: 'garden.jpg',
+      image: '/garden.jpg?v=1',
       description: 'Beautiful landscaped gardens with walking paths'
     },
     {
@@ -73,7 +73,7 @@ const Gallery = ({ onOpenModal }) => {
       id: 10,
       title: 'Kids Play Area',
       category: 'Amenities',
-      image: 'playarea.jpg',
+      image: '/playarea.jpg?v=1',
       description: 'Safe and fun play area for children'
     },
     {
@@ -87,12 +87,12 @@ const Gallery = ({ onOpenModal }) => {
       id: 12,
       title: 'Party Hall',
       category: 'Amenities',
-      image: 'hall.jpg',
+      image: '/hall.jpg?v=1',
       description: 'Spacious party hall for celebrations and events'
     }
   ];
 
-  const categories = ['All', 'Exterior', 'Interior', 'Amenities'];
+  // const categories = ['All', 'Exterior', 'Interior', 'Amenities'];
 
   useEffect(() => {
     setIsVisible(true);
@@ -182,14 +182,14 @@ const Gallery = ({ onOpenModal }) => {
             <div className="cta-buttons">
               <button 
                 className="btn-cta-primary"
-                onClick={() => onOpenModal("Download Gallery - GoRealty Property Hub LLP")}
+                onClick={() => onOpenModal("Download Gallery - Godrej Properties")}
               >
                 <span className="btn-text">Download Gallery</span>
                 <span className="btn-icon">📥</span>
               </button>
               <button 
                 className="btn-cta-secondary"
-                onClick={() => onOpenModal("Virtual Tour - GoRealty Property Hub LLP")}
+                onClick={() => onOpenModal("Virtual Tour - Godrej Properties")}
               >
                 <span className="btn-text">Virtual Tour</span>
                 <span className="btn-icon">🎥</span>

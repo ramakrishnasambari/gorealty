@@ -22,7 +22,7 @@ const About = ({ onOpenModal }) => {
         <div className={`about-header ${isVisible ? 'animate-in' : ''}`}>
           <h2 className="about-title">
             <span className="title-main">About</span>
-            <span className="title-sub">GoRealty</span>
+            <span className="title-sub">Godrej Properties</span>
           </h2>
           <p className="about-subtitle">
             Building dreams and transforming skylines for over a century
@@ -34,10 +34,10 @@ const About = ({ onOpenModal }) => {
             <div className="intro-card">
               <div className="intro-header">
                 <div className="intro-icon">🏢</div>
-                <h3 className="intro-title">About GoRealty</h3>
+                <h3 className="intro-title">About Godrej Properties</h3>
               </div>
               <p className="intro-text">
-                Founded in 1897, GoRealty is a leading real estate developer in India with a range of residential townships, business parks, and mixed-use properties as part of its portfolio. The firm's properties stand out for their lovely architecture, quality residences, pleasant green environs, and use of cutting-edge technologies.
+                Founded in 1897, Godrej Properties is a leading real estate developer in India with a range of residential townships, business parks, and mixed-use properties as part of its portfolio. The firm's properties stand out for their lovely architecture, quality residences, pleasant green environs, and use of cutting-edge technologies.
               </p>
               <div className="intro-highlight">
                 <span className="highlight-number">125+</span>
@@ -76,28 +76,29 @@ const About = ({ onOpenModal }) => {
                   <span className="rera-value">P02400009910</span>
                 </div>
                 <p className="rera-description">
-                  According to the RERA Act 2016 of the Government of India, all projects of the GoRealty including the GoRealty Rajendra Nagar, are listed on the Telangana Government's RERA website under registered projects.
+                  According to the RERA Act 2016 of the Government of India, all projects of the Godrej Properties including the Godrej Rajendra Nagar, are listed on the Telangana Government's RERA website under registered projects.
                 </p>
                 <div className="rera-details">
                   <div className="rera-detail-item">
                     <span className="detail-label">Project Registration No.:</span>
-                    <span className="detail-value">P02400009910</span>
                   </div>
                   <div className="rera-detail-item">
                     <span className="detail-label">Site Address:</span>
-                    <span className="detail-value">GoRealty Rajendra Nagar: 7CQ7+8WH, Rajendranagar mandal, Hyderabad, Telangana 500077</span>
+                    <span className="detail-value">Godrej Rajendra Nagar: 7CQ7+8WH, Rajendranagar mandal, Hyderabad, Telangana 500077</span>
                   </div>
                   <div className="rera-detail-item">
                     <span className="detail-label">Corporate Office:</span>
-                    <span className="detail-value">GoRealty: GoRealty Limited, Unit No. 5C, 5th Floor, GoRealty One, Pirojshanagar, Vikhroli East, Mumbai - 400 079</span>
+                    <span className="detail-value">Godrej Properties: Khajaguda Office, 1st Floor</span>
                   </div>
                   <div className="rera-detail-item">
                     <span className="detail-label">Government RERA Authorised Advertiser's:</span>
-                    <span className="detail-value">GoRealty Property Hub LLP</span>
+                    <span className="detail-value">Godrej Properties</span>
                   </div>
                   <div className="rera-detail-item">
-                    <span className="detail-label">Government RERA Authorised Advertiser's:</span>
-                    <span className="detail-value">Home Bazaar Services Pvt Ltd, Registration No TN/Agent/0490/2021, CIN U45400MH2013PTC242930</span>
+                    <span className="detail-label">Registration No:</span>
+                  </div>
+                  <div className="rera-detail-item">
+                    <span className="detail-label">CIN:</span>
                   </div>
                 </div>
               </div>

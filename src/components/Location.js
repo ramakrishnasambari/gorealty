@@ -127,19 +127,19 @@ const Location = ({ onOpenModal }) => {
           <div className={`map-section ${isVisible ? 'animate-in' : ''}`}>
             <div className="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.123456789!2d78.4023!3d17.3220!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDE5JzE5LjIiTiA3OMKwMjQnMDguMyJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.123456789!2d78.37025617116427!3d17.41336469862524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI0JzQ4LjEiTiA3OMKwMjInMTIuOSJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="GoRealty Location Map"
+                title="Godrej Properties Location Map"
               ></iframe>
               <div className="map-overlay">
                 <div className="map-marker">
                   <div className="marker-pin"></div>
-                  <div className="marker-label">GoRealty Property Hub LLP</div>
+                  <div className="marker-label">Godrej Properties</div>
                 </div>
               </div>
             </div>
@@ -153,14 +153,14 @@ const Location = ({ onOpenModal }) => {
             <div className="cta-buttons">
               <button 
                 className="btn-cta-primary"
-                onClick={() => onOpenModal("Schedule Visit - GoRealty Property Hub LLP")}
+                onClick={() => onOpenModal("Schedule Visit - Godrej Properties")}
               >
                 <span className="btn-text">Schedule Visit</span>
                 <span className="btn-icon">📅</span>
               </button>
               <button 
                 className="btn-cta-secondary"
-                onClick={() => onOpenModal("Get Directions - GoRealty Property Hub LLP")}
+                onClick={() => onOpenModal("Get Directions - Godrej Properties")}
               >
                 <span className="btn-text">Get Directions</span>
                 <span className="btn-icon">🗺️</span>

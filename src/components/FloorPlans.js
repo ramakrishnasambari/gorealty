@@ -92,7 +92,7 @@ const FloorPlans = ({ onOpenModal }) => {
             </div>
             <div className="master-plan-image-container">
               <img 
-                src="GMasterPlan.jpg" 
+                src="/GMasterPlan.jpg?v=1" 
                 alt="Master Site Plan" 
                 className="master-plan-image"
               />
@@ -117,7 +117,7 @@ const FloorPlans = ({ onOpenModal }) => {
               
               <div className="plan-image-container">
                 <img 
-                  src={plan.image} 
+                  src={`/${plan.image}?v=1`} 
                   alt={`${plan.type} Floor Plan`}
                   className="plan-image"
                 />
@@ -168,7 +168,7 @@ const FloorPlans = ({ onOpenModal }) => {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-modal-btn" onClick={closeModal}>×</button>
             <img 
-              src={selectedPlan === -1 ? 'GMasterPlan.jpg' : floorPlans[selectedPlan].image}
+              src={selectedPlan === -1 ? '/GMasterPlan.jpg?v=1' : `/${floorPlans[selectedPlan].image}?v=1`}
               alt={selectedPlan === -1 ? 'Master Site Plan' : `${floorPlans[selectedPlan].type} Floor Plan`}
               className="modal-image"
             />

@@ -10,6 +10,7 @@ import About from './components/About';
 import Footer from './components/Footer';
 import ContactModal from './components/ContactModal';
 import WhatsAppButton from './components/WhatsAppButton';
+import StickyButtons from './components/StickyButtons';
 import './App.css';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           onClose={closeModal}
           title={modalTitle}
         />
+        <StickyButtons onOpenModal={openModal} />
         <WhatsAppButton />
       </div>
     );

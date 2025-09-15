@@ -16,8 +16,16 @@ const Header = ({ onOpenModal }) => {
       <div className="container">
         <div className="header-content">
           <a href="#home" className="logo">
-            <img src="logo.jpeg" alt="GoRealty Logo" className="logo-image" />
-            GoRealty
+            <img src="/logo.png" alt="Godrej Properties Logo" className="logo-image" />
+          </a>
+          
+          <a 
+            href="tel:+919989860099" 
+            className="header-phone-link"
+            title="Call +91 9989860099"
+          >
+            <span className="header-phone-icon">📞</span>
+            <span className="header-phone-text">Call Now</span>
           </a>
           
           <nav className={`nav ${isMobileMenuOpen ? 'nav-open' : ''}`}>
@@ -31,7 +39,7 @@ const Header = ({ onOpenModal }) => {
               href="#virtual-tour" 
               onClick={(e) => {
                 e.preventDefault();
-                onOpenModal("Virtual Site Visit - GoRealty Property Hub LLP");
+                onOpenModal("Virtual Site Visit - Godrej Properties");
                 closeMobileMenu();
               }}
             >
@@ -41,11 +49,19 @@ const Header = ({ onOpenModal }) => {
               href="#download" 
               onClick={(e) => {
                 e.preventDefault();
-                onOpenModal("Download Brochure - GoRealty Property Hub LLP");
+                onOpenModal("Download Brochure - Godrej Properties");
                 closeMobileMenu();
               }}
             >
               Download Brochure
+            </a>
+            <a 
+              href="tel:+919989860099" 
+              className="mobile-phone-link"
+              onClick={closeMobileMenu}
+            >
+              <span className="phone-icon">📞</span>
+              <span className="phone-number">+91 9989860099</span>
             </a>
           </nav>
           

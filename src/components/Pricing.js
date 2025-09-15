@@ -112,7 +112,7 @@ const Pricing = ({ onOpenModal }) => {
               <div className="card-actions">
                 <button 
                   className="btn-primary-card"
-                  onClick={() => onOpenModal("Enquire Now - GoRealty Property Hub LLP")}
+                  onClick={() => onOpenModal("Enquire Now - Godrej Properties")}
                 >
                   <span className="btn-text">Enquire Now</span>
                   <span className="btn-icon">→</span>

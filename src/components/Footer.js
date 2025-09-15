@@ -6,7 +6,7 @@ const Footer = ({ onOpenModal }) => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3>GoRealty</h3>
+            <h3>Godrej Properties</h3>
             <p style={{ marginBottom: '1rem', color: '#bdc3c7' }}>
               Premium Real Estate Solutions for your dream home. 
               Experience luxury living with world-class amenities and 
@@ -15,7 +15,7 @@ const Footer = ({ onOpenModal }) => {
             <div style={{ display: 'flex', gap: '1rem' }}>
               <button 
                 className="footer-cta-btn"
-                onClick={() => onOpenModal("Get Instant Call Back - GoRealty Property Hub LLP")}
+                onClick={() => onOpenModal("Get Instant Call Back - Godrej Properties")}
               >
                 <span className="btn-icon">📞</span>
                 <span className="btn-text">Get Instant Call Back</span>
@@ -59,7 +59,7 @@ const Footer = ({ onOpenModal }) => {
         
         <div className="footer-bottom">
           <p className="copyright-text">
-            Copyright © 2025 GoRealty  |  Designed and Developed by 
+            Copyright © 2025 Godrej Properties  |  Designed and Developed by 
             <a 
               href="https://www.eshikatp.online/" 
               target="_blank" 

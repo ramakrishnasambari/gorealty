@@ -31,7 +31,7 @@
 }
 
 .logo-image {
-  height: 40px;
+  height: 50px;
   width: auto;
   object-fit: contain;
 }
@@ -72,6 +72,92 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* Hero Slider Styles */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  z-index: 1;
+  margin-bottom: 40px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider-slide.active {
+  opacity: 1;
+}
+
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 2;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.slider-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider-dot.active {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.slider-dot:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Slider */
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 60vh;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider {
+    height: 50vh;
+    margin-bottom: 20px;
+  }
 }
 
 .hero-bg-static {
@@ -462,7 +548,7 @@
   align-items: baseline;
   justify-content: center;
   gap: 5px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .currency {
@@ -933,12 +1019,13 @@
   z-index: 2;
 }
 
-.price-main {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 5px;
-  margin-bottom: 10px;
+  .price-main {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    flex-wrap: nowrap;
 }
 
 .currency {
@@ -952,6 +1039,7 @@
   font-weight: 800;
   color: #2c3e50;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .price-range {
@@ -3680,8 +3768,8 @@
 }
 
 .modal-logo-img {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   border-radius: 4px;
 }
@@ -3900,6 +3988,148 @@
   font-size: 0.9rem;
 }
 
+/* Sticky Buttons Styles */
+.sticky-buttons {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.sticky-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 22px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 13px;
+  font-weight: 500;
+  min-width: 110px;
+  text-align: left;
+}
+
+.sticky-btn:hover {
+  transform: translateX(-5px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.sticky-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.sticky-text {
+  white-space: nowrap;
+}
+
+.sticky-tooltip {
+  position: absolute;
+  right: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2c3e50;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 1001;
+}
+
+.sticky-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  border: 6px solid transparent;
+  border-left-color: #2c3e50;
+}
+
+.sticky-btn:hover .sticky-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sticky-brochure {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+}
+
+.sticky-brochure:hover {
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.5);
+}
+
+.sticky-floorplan {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+}
+
+.sticky-floorplan:hover {
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.5);
+}
+
+/* Responsive Sticky Buttons */
+@media (max-width: 768px) {
+  .sticky-buttons {
+    bottom: 90px;
+    right: 15px;
+    gap: 12px;
+  }
+  
+  .sticky-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+    min-width: 100px;
+  }
+  
+  .sticky-icon {
+    font-size: 14px;
+  }
+  
+  .sticky-tooltip {
+    right: 110px;
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sticky-buttons {
+    bottom: 80px;
+    right: 10px;
+    gap: 10px;
+  }
+  
+  .sticky-btn {
+    padding: 7px 10px;
+    font-size: 11px;
+    min-width: 90px;
+  }
+  
+  .sticky-icon {
+    font-size: 13px;
+  }
+  
+  .sticky-tooltip {
+    right: 100px;
+    font-size: 0.75rem;
+    padding: 5px 8px;
+  }
+}
+
 /* WhatsApp Button Styles */
 .whatsapp-button {
   position: fixed;
@@ -4078,6 +4308,67 @@
   .mobile-menu-btn {
     display: block;
   }
+
+  .header-phone-link {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(52, 152, 219, 0.3);
+    margin-right: 0.3rem;
+  }
+
+  .header-phone-link:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+  }
+
+  .header-phone-icon {
+    font-size: 1rem;
+  }
+
+  .header-phone-text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  .mobile-phone-link {
+    display: flex !important;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .mobile-phone-link:hover {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
+    color: #fff;
+  }
+
+  .phone-icon {
+    font-size: 1.2rem;
+  }
+
+  .phone-number {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+  }
   
   .hero {
     padding: 100px 0 60px;
@@ -4177,6 +4468,7 @@
   
   .price-amount {
     font-size: 2rem;
+    white-space: nowrap;
   }
   
   .currency {
@@ -4379,5 +4671,16 @@
   
   .section-title {
     font-size: 1.8rem;
+  }
+}
+
+/* Hide phone link on desktop */
+@media (min-width: 769px) {
+  .mobile-phone-link {
+    display: none !important;
+  }
+  
+  .header-phone-link {
+    display: none !important;
   }
 }
