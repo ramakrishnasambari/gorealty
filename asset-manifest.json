@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/gorealty/static/css/main.c9b7eef2.css",
-    "main.js": "/gorealty/static/js/main.8a94143e.js",
-    "index.html": "/gorealty/index.html",
-    "main.c9b7eef2.css.map": "/gorealty/static/css/main.c9b7eef2.css.map",
-    "main.8a94143e.js.map": "/gorealty/static/js/main.8a94143e.js.map"
+    "main.css": "/static/css/main.1633bdfe.css",
+    "main.js": "/static/js/main.0e6ef808.js",
+    "index.html": "/index.html",
+    "main.1633bdfe.css.map": "/static/css/main.1633bdfe.css.map",
+    "main.0e6ef808.js.map": "/static/js/main.0e6ef808.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9b7eef2.css",
-    "static/js/main.8a94143e.js"
+    "static/css/main.1633bdfe.css",
+    "static/js/main.0e6ef808.js"
   ]
 }
