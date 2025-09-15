@@ -117,7 +117,7 @@ const FloorPlans = ({ onOpenModal }) => {
               
               <div className="plan-image-container">
                 <img 
-                  src={`/${plan.image}?v=1`} 
+                  src={`${plan.image}?v=1`} 
                   alt={`${plan.type} Floor Plan`}
                   className="plan-image"
                 />

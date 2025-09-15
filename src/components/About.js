@@ -88,7 +88,7 @@ const About = ({ onOpenModal }) => {
                   </div>
                   <div className="rera-detail-item">
                     <span className="detail-label">Corporate Office:</span>
-                    <span className="detail-value">Godrej Properties: Khajaguda Office, 1st Floor</span>
+                    <span className="detail-value">Godrej Properties: Godrej Properties Limited, Unit No. 5C, 5th Floor, Godrej One, Pirojshanagar, Vikhroli East, Mumbai - 400 079</span>
                   </div>
                   <div className="rera-detail-item">
                     <span className="detail-label">Government RERA Authorised Advertiser's:</span>

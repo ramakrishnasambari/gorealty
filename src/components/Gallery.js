@@ -45,7 +45,7 @@ const Gallery = ({ onOpenModal }) => {
       id: 6,
       title: 'Garden Area',
       category: 'Amenities',
-      image: '/garden.jpg?v=1',
+      image: 'garden.jpg?v=1',
       description: 'Beautiful landscaped gardens with walking paths'
     },
     {
@@ -73,7 +73,7 @@ const Gallery = ({ onOpenModal }) => {
       id: 10,
       title: 'Kids Play Area',
       category: 'Amenities',
-      image: '/playarea.jpg?v=1',
+      image: 'playarea.jpg?v=1',
       description: 'Safe and fun play area for children'
     },
     {
@@ -87,7 +87,7 @@ const Gallery = ({ onOpenModal }) => {
       id: 12,
       title: 'Party Hall',
       category: 'Amenities',
-      image: '/hall.jpg?v=1',
+      image: 'hall.jpg?v=1',
       description: 'Spacious party hall for celebrations and events'
     }
   ];
