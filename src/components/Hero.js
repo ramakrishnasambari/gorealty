@@ -13,8 +13,8 @@ const Hero = ({ onOpenModal }) => {
   ];
 
   const sliderImages = [
-    "/slider1.webp",
-    "/slider2.webp"
+    "slider1.webp",
+    "slider2.webp"
   ];
 
   useEffect(() => {

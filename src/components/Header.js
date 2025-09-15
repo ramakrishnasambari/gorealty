@@ -16,7 +16,7 @@ const Header = ({ onOpenModal }) => {
       <div className="container">
         <div className="header-content">
           <a href="#home" className="logo">
-            <img src="/logo.png" alt="Godrej Properties Logo" className="logo-image" />
+            <img src="logo.png" alt="Godrej Properties Logo" className="logo-image" />
           </a>
           
           <a 

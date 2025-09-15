@@ -60,7 +60,7 @@ Thank you.`;
         
         <div className="modal-header">
           <div className="modal-logo-container">
-            <img src="/logo.png" alt="Godrej Properties Logo" className="modal-logo-img" />
+            <img src="logo.png" alt="Godrej Properties Logo" className="modal-logo-img" />
           </div>
         </div>
 
